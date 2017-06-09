@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<title>Computer Science</title>
+
+<style>
+    #map-canvas { width: 500px; height: 400px; background-color: #CCC; }
+</style>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src="js.js"></script>
+  <script>
+  document.oncontextmenu=hideMenu;
+  </script>
+  <link type="text/css" rel="stylesheet" href="css.css">
+</head>
+<body onload="moving()">
+<header id="header" onload="initialize()">
+  <div>
+    <a href="web.html"><h1>
+      강릉원주대학교
+    </h1>
+    <h1>
+      컴퓨터공학과
+    </h1>
+    </a>
+  </div>
+</header>
+<nav id="topMenu">
+  <ul>
+    <li class="topMenuLi"> <a class="menuLink" href="IntroductionOfDepartment.html">학과소개</a>
+     <ul class="submenu">
+       <li><a class="submenuLink" href="IntroductionOfDepartment.html">학과소개</a></li>
+       <li><a class="submenuLink" href="IntroductionOfYearsofComputerSC.html">연혁</a></li>
+       <li><a class="submenuLink" href="InformationOfLocation.html">찾아오시는길</a></li>
+       </ul>
+     </li>
+     <li>|</li>
+     <li class="topMenuLi"> <a class="menuLink" href="IntroductionOfProfessor.html">전공소개</a>
+       <ul class="submenu">
+         <li><a class="submenuLink" href="IntroductionOfProfessor.html">교수진</a></li>
+         <li><a class="submenuLink" href="IntroductionOfCourse.html">교과과정</a></li>
+         <li><a class="submenuLink" href="IntroductionOfSemester.html">학사일정</a></li>
+         </ul>
+       </li>
+     </li>
+     <li>|</li>
+     <li class="topMenuLi"> <a class="menuLink" href="IntroductionOfGraduation.html">졸업요건</a>
+       <ul class="submenu">
+         <li><a class="submenuLink" href="IntroductionOfGraduation.html">졸업요건</a></li>
+         <li><a class="submenuLink" href="InformationOfEssentialStep.html">필수선이수체계도</a></li>
+         <li><a class="submenuLink" href="InformationOfStep.html">교과목이수체계도</a></li>
+       </ul>
+     </li>
+     <li>|</li>
+     <li class="topMenuLi"> <a class="menuLink" href="SeekJob.html">자료실</a>
+       <ul class="submenu">
+         <li><a class="submenuLink" href="SeekJob.html">취업자료</a></li>
+         <li><a class="submenuLink" href="Notification.html">공지사항</a></li>
+       </ul>
+     </li>
+     <li>|</li>
+     <li class="topMenuLi"> <a class="menuLink" onclick="return query()" href="http://ipsi.gwnu.ac.kr/mbs/ipsi/index.jsp">입학안내</a> </li>
+   </ul>
+</nav>
+<section id="section">
+  <h3>오시는길</h3>
+  <br>
+  <br><br>
+  <hr size ="3px" color ="black">
+  <br>
+
+  <div id="map-canvas" style="width: 800px; height: 400px"></div>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <footer id="footer">
+    강원도 원주시 흥업면 남원로 150 강릉원주대학교 종합강의연구동 2층 ☎ 전화 033-760-8660 <b>made by 병우</b>, 동원
+  </footer>
+  <br><br>
+</scetion>
+
+</body>
+</html>

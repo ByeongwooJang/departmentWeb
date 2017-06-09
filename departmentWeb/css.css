@@ -1,0 +1,378 @@
+@font-face{
+    font-family: FONT;
+    src: url(폰트.ttf);
+}
+body{
+  background: floralwhite;
+}
+
+  .container {
+     width: 750px;
+     padding: 0 30px;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+     margin-top: 0
+  }
+
+  nav{
+    position : fixed;
+    z-index: 3;
+    left : 400px;
+    top : 60px;
+    float : left;
+    color : white;
+  }
+  #topMenuWeb {
+    height: 30px;
+    width: 1024px;
+  }
+  #topMenuWeb ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  #topMenuWeb ul li {
+    color: #f1c40f;
+    text-shadow: 1px 1px 4px black;
+    /*background:rgba(0,0,0,0.2);*/
+    float: left;
+    line-height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    display : inline;
+    font-family: 'FONT';
+  }
+  .menuLinkWeb, .submenuLinkWeb { /* 상위 메뉴와 하위 메뉴의 a 태그에 공통으로 설정할 스타일 */
+    text-decoration:none; /* a 태그의 꾸밈 효과 제거 */
+    display: block; /* a 태그의 클릭 범위를 넓힘 */
+    width: 170px; /* 기본 넓이를 150px로 설정 */
+    font-size: 20px; /* 폰트 사이즈를 12px로 설정 */
+    font-family: 'FONT';
+  }
+  .menuLinkWeb { /* 상위 메뉴의 글씨색을 노랑으로 설정 */
+    color: #f1c40f;
+    font-family: 'FONT';
+  }
+  .topMenuLiWeb:hover .menuLinkWeb { /* 상위 메뉴의 li에 마우스오버 되었을 때 스타일 설정 */
+    color: Tomato; /* 글씨 색 빨간색 */
+    text-shadow: 1px 1px 4px black;
+    background:rgba(0,0,0,0); /* 투명한 배경색222222222 */
+  }
+  .submenuLinkWeb { /* 하위 메뉴의 a 태그 스타일 설정 */
+    color: #f1c40f; /* 글씨 색을 RGB(2D2D2D)로 설정 */
+    background:rgba(0,0,0,0); /* 투명한 배경색222222222 */
+    border: none; /* 테두리를 설정 */
+    margin-top: -1px; /* 위 칸의 하단 테두리와 아래칸의 상단 테두리가 겹쳐지도록 설덩 */
+    font-size: 16px;
+  }
+  .longLinkWeb { /* 좀 더 긴 메뉴 스타일 설정 */
+    width: 190px; /* 넓이는 190px로 설정 */
+  }
+  .submenuWeb { /* 하위 메뉴 스타일 설정 */
+    position: absolute; /* html의 flow에 영향을 미치지 않게 absolute 설정 */
+    height: 0px; /* 초기 높이는 0px로 설정 */
+    overflow: hidden; /* 실 내용이 높이보다 커지면 해당 내용 감춤 */
+    transition: height .2s; /* height를 변화 시켰을 때 0.2초간 변화 되도록 설정(기본) */
+
+  }
+  .topMenuLiWeb:hover .submenuWeb { /* 상위 메뉴에 마우스 모버한 경우 그 안의 하위 메뉴 스타일 설정 */
+    height: 130px; /* 높이를 93px로 설정 */
+  }
+  .submenuLinkWeb:hover { /* 하위 메뉴의 a 태그의 마우스 오버 스타일 설정 */
+    color: orange; /* 글씨색을 빨간색으로 설정 */
+    font-weight: bold;
+
+  }
+
+  #topMenu {
+    height: 30px;
+    width: 1024px;
+  }
+  #topMenu ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  #topMenu ul li {
+    color: RoyalBlue;
+    float: left;
+    line-height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    display : inline;
+    font-family: 'FONT';
+  }
+  .menuLink, .submenuLink { /* 상위 메뉴와 하위 메뉴의 a 태그에 공통으로 설정할 스타일 */
+    text-decoration:none; /* a 태그의 꾸밈 효과 제거 */
+    display: block; /* a 태그의 클릭 범위를 넓힘 */
+    width: 170px; /* 기본 넓이를 150px로 설정 */
+    font-size: 20px; /* 폰트 사이즈를 12px로 설정 */
+    font-family: 'FONT';
+  }
+  .menuLink { /* 상위 메뉴의 글씨색을 노랑으로 설정 */
+    color: RoyalBlue;
+    font-family: 'FONT';
+  }
+  .topMenuLi:hover .menuLink { /* 상위 메뉴의 li에 마우스오버 되었을 때 스타일 설정 */
+    color:gray ; /* 글씨 색 빨간색 */
+    background:rgba(0,0,0,0); /* 투명한 배경색222222222 */
+  }
+  .submenuLink { /* 하위 메뉴의 a 태그 스타일 설정 */
+    color: MediumOrchid; /* 글씨 색을 RGB(2D2D2D)로 설정 */
+    background:rgba(0,0,0,0); /* 투명한 배경색222222222 */
+    border: none; /* 테두리를 설정 */
+    margin-top: -1px; /* 위 칸의 하단 테두리와 아래칸의 상단 테두리가 겹쳐지도록 설덩 */
+    font-size: 16px;
+  }
+  .longLink { /* 좀 더 긴 메뉴 스타일 설정 */
+    width: 190px; /* 넓이는 190px로 설정 */
+  }
+  .submenu { /* 하위 메뉴 스타일 설정 */
+    position: absolute; /* html의 flow에 영향을 미치지 않게 absolute 설정 */
+    height: 0px; /* 초기 높이는 0px로 설정 */
+    overflow: hidden; /* 실 내용이 높이보다 커지면 해당 내용 감춤 */
+    transition: height .2s; /* height를 변화 시켰을 때 0.2초간 변화 되도록 설정(기본) */
+
+  }
+  .topMenuLi:hover .submenu { /* 상위 메뉴에 마우스 모버한 경우 그 안의 하위 메뉴 스타일 설정 */
+    height: 130px; /* 높이를 93px로 설정 */
+  }
+  .submenuLink:hover { /* 하위 메뉴의 a 태그의 마우스 오버 스타일 설정 */
+    color: Indigo; /* 글씨색을 빨간색으로 설정 */
+    background-color: #dddddd; /* 배경을 RGB(DDDDDD)로 설정 */
+  }
+
+  p{
+    text-align: center;
+  }
+  #sectionWeb{
+    position : absolute;
+    top : -20px;;
+    left : -10px;
+    float : left;
+    width : 100%;
+    color : blue;
+
+  }
+  #sectionWeb div{
+    position : relative;
+    text-align: center;
+  }
+  #sectionWeb div > a{
+      margin-left : 10px;
+    }
+   #sectionYear{
+    position : absolute;
+    top : 160px;
+    left : 230px;
+    float : left;
+    width : 70%;
+    background: floralwhite;/*floralwhite*/
+    color : black;
+    line-height: 2em;
+  }
+  #sectionYear h3{
+    display: inline-block;
+    margin-top:30px;
+    margin-left: 30px;
+    margin-right: 170px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    float : left ;
+  }
+
+  #sectionYear h4{
+    display: inline-block;
+    margin-top:30px;
+    margin-left: 30px;
+    margin-right: 180px;
+    margin-bottom: 200px;
+    font-size: 25px;
+    float : left ;
+  }#sectionGradu{
+    position : absolute;
+    top : 160px;
+    left : 230px;
+    float : left;
+    width : 70%;
+    background: floralwhite;/*floralwhite*/
+    color : black;
+    line-height: 2em;
+  }
+  #sectionGradu h3{
+    display: inline-block;
+    margin-top:30px;
+    margin-left: 30px;
+    margin-right: 170px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    float : left ;
+  }
+
+  #sectionGradu h4{
+    display: inline-block;
+    margin-top:30px;
+    margin-left: 30px;
+    margin-right: 180px;
+    margin-bottom: 200px;
+    font-size: 25px;
+    float : left ;
+  }
+  #sectionGradu table{
+   border : 1.5px solid;
+   margin : 0 auto;
+   max-width: 1200px;
+ }
+ #sectionGradu td{
+   border : 1px solid;
+   padding: 10px;
+   text-align: center;
+ }
+ #sectionGradu p{
+      font-size: 30px;
+      text-align: center;
+ }
+  #section{
+    position : absolute;
+    top : 160px;
+    left : 230px;
+    float : left;
+    width : 70%;
+    background: floralwhite;/*floralwhite*/
+    color : black;
+    line-height: 2em;
+  }
+  #section h3{
+    display: inline-block;
+    margin-top:30px;
+    margin-left: 30px;
+    margin-right: 170px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    float : left ;
+  }
+
+  #section h4{
+    display: inline-block;
+    margin-top:30px;
+    margin-left: 30px;
+    margin-right: 180px;
+    margin-bottom: 200px;
+    font-size: 25px;
+    float : left ;
+  }
+
+  #section div{
+    display : inline-block;
+    position : absolute;
+    left : 100px;
+  }
+
+  #section div > a{
+    margin-left : 10px;
+  }
+  #section ul li{
+    list-style-type : none;
+    padding : 1em;
+    margin-left : -2em;
+  }
+  #section p{
+        font-size: 30px;
+        text-align: center;
+        margin: 0 auto;
+  }
+  #section table{
+   border : 1.5px solid;
+   width : 100%;
+ }
+ #section td{
+   border : 1px solid;
+   padding: 2px;
+   text-align: center;
+ }
+  #section hr{
+      color : black;
+      font-size:50px;
+      size : 20px;
+      font-weight :bold;
+    }
+  #section img{
+        position: absolute;
+ }
+#centerOfP{
+position: relative;
+font-size: 15px;
+
+}
+  #footer{
+    color : black;
+    text-align: center;
+  }
+  #header {
+        text-shadow: 1px 1px 4px black;
+       z-index: 2;
+       position : fixed;
+       padding: 5px 0;
+       margin-bottom: 10px;
+       top : 0px;
+       left : 0px;
+       width:100%;
+       height:130px;
+       background:rgba(0,0,0,0.1);
+  }
+  #headerWeb {
+      text-shadow: 1px 1px 4px black;
+     z-index: 2;
+     position : fixed;
+     padding: 5px 0;
+     margin-bottom: 10px;
+     top : 0px;
+     left : 0px;
+     width:100%;
+     height:130px;
+     background:rgba(0,0,0,0.2);
+  }
+  #headerWeb div{
+    left : 120px;
+    position: absolute;
+    margin-top:10px;
+  }
+  #headerWeb a{
+        color : white;
+        text-decoration: none;
+ }
+ #headerWeb h1{
+   margin :0px;
+   color : white;
+ }
+  #header div{
+    left : 150px;
+    position: absolute;
+    margin-top:10px;
+  }
+
+  #header h1{
+    margin :0px;
+    color : white;
+  }
+  #header a{
+    text-decoration: none;
+  }
+
+  #article{
+    position: relative;
+    left : 50px;
+    font-size: 15px;
+    width : 70%;
+  }
+  #article span{
+    position: absolute;
+    top : 50px;
+    left : 260px;
+  }
+  #article b{
+    font-size: 20px;
+  }

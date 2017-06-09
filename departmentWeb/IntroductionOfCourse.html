@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<title>Computer Science</title>
+<script src="js.js"></script>
+<script>
+document.oncontextmenu=hideMenu;
+</script>
+<link type="text/css" rel="stylesheet" href="css.css">
+<style>
+
+</style>
+</head>
+<body onload="moving()">
+<header id="header">
+  <div>
+    <a href="web.html"><h1>
+      강릉원주대학교
+    </h1>
+    <h1>
+      컴퓨터공학과
+    </h1>
+    </a>
+  </div>
+</header>
+<nav id="topMenu">
+  <ul>
+    <li class="topMenuLi"> <a class="menuLink" href="IntroductionOfDepartment.html">학과소개</a>
+     <ul class="submenu">
+       <li><a class="submenuLink" href="IntroductionOfDepartment.html">학과소개</a></li>
+       <li><a class="submenuLink" href="IntroductionOfYearsofComputerSC.html">연혁</a></li>
+       <li><a class="submenuLink" href="InformationOfLocation.html">찾아오시는길</a></li>
+       </ul>
+     </li>
+     <li>|</li>
+     <li class="topMenuLi"> <a class="menuLink" href="IntroductionOfProfessor.html">전공소개</a>
+       <ul class="submenu">
+         <li><a class="submenuLink" href="IntroductionOfProfessor.html">교수진</a></li>
+         <li><a class="submenuLink" href="IntroductionOfCourse.html">교과과정</a></li>
+         <li><a class="submenuLink" href="IntroductionOfSemester.html">학사일정</a></li>
+         </ul>
+       </li>
+     </li>
+     <li>|</li>
+     <li class="topMenuLi"> <a class="menuLink" href="IntroductionOfGraduation.html">졸업요건</a>
+       <ul class="submenu">
+         <li><a class="submenuLink" href="IntroductionOfGraduation.html">졸업요건</a></li>
+         <li><a class="submenuLink" href="InformationOfEssentialStep.html">필수선이수체계도</a></li>
+         <li><a class="submenuLink" href="InformationOfStep.html">교과목이수체계도</a></li>
+       </ul>
+     </li>
+     <li>|</li>
+     <li class="topMenuLi"> <a class="menuLink" href="SeekJob.html">자료실</a>
+       <ul class="submenu">
+         <li><a class="submenuLink" href="SeekJob.html">취업자료</a></li>
+         <li><a class="submenuLink" href="Notification.html">공지사항</a></li>
+       </ul>
+     </li>
+     <li>|</li>
+     <li class="topMenuLi"> <a class="menuLink" onclick="return query()" href="http://ipsi.gwnu.ac.kr/mbs/ipsi/index.jsp">입학안내</a> </li>
+   </ul>
+</nav>
+
+<section id="section">
+  <h3>교과과정</h3>
+  <br>
+  <br><br>
+  <hr size ="3px" color ="black">
+  <br>
+  <p>교육과정표</p>
+  <p style="font-size : 15px; text-align :right"></p>
+  <table style="margin : 0 auto; max-width :1000px;">
+        <caption style="text-align:right">♣ : 교직과정과목, ☆ : 교직 기본이수교과목, * : 부전공지정과목</caption>
+    <tr><td rowspan="2" style="width : 10%"><b>학년-학기</b></td>
+       <td rowspan="2" style="width : 10%;"><b>이수구분</b></td>
+       <td rowspan="2" style="width : 10%;"><b>학수번호</b></td>
+       <td rowspan="2" style="width : 450px;"><b>교과목명</b></td>
+       <td rowspan="2" style="width : 10%;"><b>학점</b></td>
+       <td colspan="2" style="width : 14%;"><b>시수</b></td></tr>
+    <tr><td style="width : 7%;"><b>이론</b></td>
+          <td style="width : 7%;"><b>실습</b></td></tr>
+    <tr><td rowspan="3">1-1</td><td rowspan="2">균형</td><td>501.008</td><td>미분적분학Ⅰ(Calculus Ⅰ)</td><td>3</td><td>3</td><td>0</td></tr>
+    <tr><td>504.010</td><td>일반물리학실험(General Physics Lab)</td><td>3</td><td>3</td><td>0</td></tr>
+    <tr><td>기초</td><td>807.001</td><td>☆컴퓨터프로그래밍Ⅰ(Computer Programming Ⅰ)</td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td rowspan="5">1-2</td><td rowspan="2">균형</td><td>501.009</td><td>미분적분학Ⅱ(Calculus Ⅱ)</td><td>3</td><td>3</td><td>0</td></tr>
+    <tr><td>신설</td><td>이산수학(Discrete Mathematics)</td><td>3</td><td>3</td><td>0</td></tr>
+    <tr><td rowspan="2">기초</td><td>503.203</td><td>이산구조(Discrete Architecture)</td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td>808.002</td><td>컴퓨터프그래밍Ⅱ(Computer Programming Ⅱ)</td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td>필수</td><td>503.228</td><td>입문설계(Introduction to Design)</td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td rowspan="8">2-1</td><td>기초</td><td>503.230</td><td>컴퓨터응용수학(Applied  Mathematics)</td><td>3</td><td>3</td><td>0</td></tr>
+    <tr><td rowspan="2">필수</td><td>503.216</td><td>*☆데이터구조(Data  Structures)</td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td>503.231</td><td>*객체지향프로그래밍Ⅰ<br>(Object  Oriented Programming I)</td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td rowspan="5">선택</td><td>503.343</td><td>인공지능 및 로봇실습(AI and Robot  Practice)</td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td>신설</td><td>웹프로그래밍(Web  Programming)</td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td>503.455</td><td>유닉스와클라우드시스템(Unix &  Cloud System)</td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td>신설</td><td>시스템과 모델링(System &  Modelling)</td><td>3</td><td>3</td><td>0</td></tr>
+    <tr><td>신설</td><td>웹디자인(Web Design)</td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td rowspan="8">2-2</td><td>기초</td><td>503.251</td><td>확률 및 통계(Probablity&  Statistics)</td><td>3</td><td>3</td><td>0</td></tr>
+    <tr><td>필수</td><td>503.240</td><td>*객체지향프로그래밍Ⅱ<br>(Object  Oriented Programming II)</td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td rowspan="6">선택</td><td>503.303</td><td>☆시스템프로그래밍(Systems  Programming)</td><td>3</td><td>3</td><td>0</td></tr>
+    <tr><td>503.223</td><td>파일처리론(File  Processing)</td><td>3</td><td>3</td><td>0</td></tr>
+    <tr><td>503.321</td><td>디지털회로설계 및 실습<br>(Digital  Circuit Design & Practice)</td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td>신설</td><td>데이터통신(Data  Communications)</td><td>3</td><td>3</td><td>0</td></tr>
+    <tr><td>503.452</td><td>컴퓨터그래픽스실습(Computer  Graphics & Practice)</td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td>신설</td><td>그래픽디자인(Graphic Design)</td><td>3</td><td>3</td><td>0</td></tr>
+    <tr><td rowspan="9">3-1</td><td rowspan="9">선택</td><td>503.212</td><td>☆컴퓨터구조(Computer  Architecture)</td><td>3</td><td>3</td><td>0</td></tr>
+    <tr><td>503.319</td><td>☆운영체제(Operating  Systems)</td><td>3</td><td>3</td><td>0</td></tr>
+    <tr><td>503.326</td><td>☆프로그래밍언어론(Programming  Languages)</td><td>3</td><td>3</td><td>0</td></tr>
+    <tr><td>503.411</td><td>멀티미디어(Multimedia)</td><td>3</td><td>3</td><td>0</td></tr>
+    <tr><td>신설</td><td>컴퓨터네트워크(Computer  Networks)</td><td>3</td><td>3</td><td>0</td></tr>
+    <tr><td>503.329</td><td>♣정보ㆍ컴퓨터교육론(tudies in  Computer Education)</td><td>3</td><td>3</td><td>0</td></tr>
+    <tr><td>503.342</td><td>알고리즘설계실습(Algorithm  Design & Practice)</td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td>503.350</td><td>현장실습Ⅰ(On the Job  TraininⅠ)</td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td>신설</td><td>수치해석(Numerical  Analysis)</td><td>3</td><td>3</td><td>0</td></tr>
+    <tr><td rowspan="9">3-2</td><td rowspan="9">선택</td><td>503.227</td><td>♣정보ㆍ컴퓨터논리및논술(Logic and  Discourse in Computer Education)</td><td>3</td><td>3</td><td>0</td></tr>
+    <tr><td>503.308</td><td>☆소프트웨어공학(Software  Engineering)</td><td>3</td><td>3</td><td>0</td></tr>
+    <tr><td>503.345</td><td>데이터베이스설계실습(Database  Design & Practice)</td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td>503.457</td><td>데이터마이닝(Data Mining)</td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td>503.344</td><td>초고속컴퓨팅실습(High  Performance Computing)</td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td>503.322</td><td>컴퓨터네트워크응용및실습<br>(Computer  Networks Application & Practice)</td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td>503.341</td><td>마이크로프로세서실습(Microprocessor  & Practice) </td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td>503.351</td><td>현장실습Ⅱ(On the Job  TrainingⅡ)</td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td>신설</td><td>디자인패턴(Design Pattern)</td><td>3</td><td>3</td><td>0</td></tr>
+    <tr><td rowspan="7">4-1</td><td>필수</td><td>503.435</td><td>*창의적종합설계(Capstone  Design)</td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td rowspan="6">선택</td><td>503.435</td><td>시스템분석및설계(Systems  Analysis Design & Practice)</td><td>3</td><td>3</td><td>0</td></tr>
+    <tr><td>503.444</td><td>컴파일러구성실습(Compiler  Design & Practice)</td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td>503.445</td><td>웹데이터베이스프로그램설계및실습<br>(Design &  Practice of Webdatabase)</td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td>503.458</td><td>네트워크보안(Network  Security)</td><td>3</td><td>3</td><td>0</td></tr>
+    <tr><td>503.430</td><td>임베디드시스템(Embedded  Systems)</td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td>503.436</td><td>♣정보ㆍ컴퓨터교재연구및지도법(Studies in  Teaching & Methodology of Computer Education)</td><td>3</td><td>3</td><td>0</td></tr>
+    <tr><td rowspan="5">4-2</td><td>필수</td><td>503.450</td><td>졸업프로젝트(Graduation  Project)</td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td rowspan="4">선택</td><td>신설</td><td>가상현실(Virtual  Reality)</td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td>503.451</td><td>모바일프로그래밍(Mobile  Programming)</td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td>503.456</td><td>빅데이터컴퓨팅(Big Data  Computing)</td><td>3</td><td>3</td><td>0</td></tr>
+    <tr><td>신설</td><td>영상처리(Image  Processing)</td><td>3</td><td>2</td><td>2</td></tr>
+    <tr><td></td><td></td><td></td><td></td><td>162</td><td>134</td><td>56</td><td</td></tr>
+
+  </table>
+  <br><br>
+  <footer id="footer">
+    강원도 원주시 흥업면 남원로 150 강릉원주대학교 종합강의연구동 2층 ☎ 전화 033-760-8660 <b>made by 병우</b>, 동원
+  </footer>
+  <br><br>
+</scetion>
+</body>
+</html>

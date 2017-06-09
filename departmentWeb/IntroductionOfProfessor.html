@@ -1,0 +1,114 @@
+﻿<!doctype html>
+<html>
+<head>
+<title>Computer Science</title>
+<script>
+function query(){
+      var ret = confirm("입학홈페이지로 이동하시겠습니까?");
+      return ret;
+}
+function hideMenu(){
+      alert("우클릭 금지");
+      return false;
+}
+document.oncontextmenu=hideMenu;
+
+</script>
+
+<link type="text/css" rel="stylesheet" href="css.css">
+
+</head>
+<body onload="moving()">
+<header id="header">
+  <div>
+    <a href="web.html"><h1>
+      강릉원주대학교
+    </h1>
+    <h1>
+      컴퓨터공학과
+    </h1>
+    </a>
+  </div>
+</header>
+<nav id="topMenu">
+  <ul>
+    <li class="topMenuLi"> <a class="menuLink" href="IntroductionOfDepartment.html">학과소개</a>
+     <ul class="submenu">
+       <li><a class="submenuLink" href="IntroductionOfDepartment.html">학과소개</a></li>
+       <li><a class="submenuLink" href="IntroductionOfYearsofComputerSC.html">연혁</a></li>
+       <li><a class="submenuLink" href="InformationOfLocation.html">찾아오시는길</a></li>
+       </ul>
+     </li>
+     <li>|</li>
+     <li class="topMenuLi"> <a class="menuLink" href="IntroductionOfProfessor.html">전공소개</a>
+       <ul class="submenu">
+         <li><a class="submenuLink" href="IntroductionOfProfessor.html">교수진</a></li>
+         <li><a class="submenuLink" href="IntroductionOfCourse.html">교과과정</a></li>
+         <li><a class="submenuLink" href="IntroductionOfSemester.html">학사일정</a></li>
+         </ul>
+       </li>
+     </li>
+     <li>|</li>
+     <li class="topMenuLi"> <a class="menuLink" href="IntroductionOfGraduation.html">졸업요건</a>
+       <ul class="submenu">
+         <li><a class="submenuLink" href="IntroductionOfGraduation.html">졸업요건</a></li>
+         <li><a class="submenuLink" href="InformationOfEssentialStep.html">필수선이수체계도</a></li>
+         <li><a class="submenuLink" href="InformationOfStep.html">교과목이수체계도</a></li>
+       </ul>
+     </li>
+     <li>|</li>
+     <li class="topMenuLi"> <a class="menuLink" href="SeekJob.html">자료실</a>
+       <ul class="submenu">
+         <li><a class="submenuLink" href="SeekJob.html">취업자료</a></li>
+         <li><a class="submenuLink" href="Notification.html">공지사항</a></li>
+       </ul>
+     </li>
+     <li>|</li>
+     <li class="topMenuLi"> <a class="menuLink" onclick="return query()" href="http://ipsi.gwnu.ac.kr/mbs/ipsi/index.jsp">입학안내</a> </li>
+   </ul>
+</nav>
+
+<section id="section">
+  <h3>교수진</h3>
+  <br>
+  <br><br>
+  <hr size ="3px" color ="black">
+  <br><br><br>
+  <article id="article">
+  <img src="./professor/1.김창화.png" width="231" height="264">
+  <span style="line-height: 1.4em;"><b>김창화</b> 교수<br>데이터베이스<br><br>W6-308<br>760-8663<br>kch@gwnu.ac.kr</span>
+
+  <img src="./professor/2.권기태.png" width="231" height="264" style="left:500px">
+  <span style="line-height: 1.4em; left :800px"><b>권기태</b> 교수<br>소프트웨어공학<br><br>W6-307<br>760-8664<br>ktkwon@gwnu.ac.kr</span>
+  <br><br><br><br>
+
+  <img src="./professor/3.이형원.png" width="231" height="264" style="top :400px;">
+  <span style="line-height: 1.4em; top : 400px"><b>이형원</b> 교수<br>소프트웨어공학<br><br>W6-304<br>760-8665<br>lhw@gwnu.ac.kr</span>
+
+  <img src="./professor/4.강태원.png" width="231" height="264" style="left:500px; top:400px">
+  <span style="line-height: 1.4em; top : 400px; left : 800px"><b>강태원</b> 교수<br>인공지능<br><br>W6-313<br>760-8666<br>twkang@gwnu.ac.kr</span>
+  <br><br><br><br>
+
+  <img src="./professor/5.김영태.png" width="231" height="264"  style="top :750px;">
+  <span style="line-height: 1.4em; top : 750px"><b>김영태</b> 교수<br>병렬처리<br><br>W6-210<br>760-8667<br>ykim@gwnu.ac.kr</span>
+
+  <img src="./professor/6.이형봉.png" width="231" height="264" style="left:500px; top:750px">
+  <span style="line-height: 1.4em; top : 750px; left : 800px"><b>이형봉</b> 교수<br>운영체제<br><br>W6-209<br>760-8668<br>hblee@gwnu.ac.kr</span>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <img src="./professor/7.김상경.png" width="231" height="264" style="top :1070px;">
+  <span style="line-height: 1.4em; top : 1070px"><b>김상경</b> 교수<br>네트워크<br><br>W6-206<br>760-8669<br>skkim98@gwnu.ac.kr</span>
+  <br><br><br><br><br><br>
+  <h2>조교</h2>
+  <img src="./professor/8.백미혜.png" width="231" height="264" style="top :1500px;">
+  <span style="line-height: 1.4em; top : 1500px"><b>백미혜</b> 조교<br><br>W6-204<br>760-8660<br>comse@gwnu.ac.kr<br>FAX : 033-760-8661</span>
+  </article>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+  <footer id="footer">
+    강원도 원주시 흥업면 남원로 150 강릉원주대학교 종합강의연구동 2층 ☎ 전화 033-760-8660 <b>made by 병우</b>, 동원
+  </footer>
+  <br><br>
+</scetion>
+</body>
+</html>
